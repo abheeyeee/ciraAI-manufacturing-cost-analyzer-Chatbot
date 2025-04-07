@@ -1,0 +1,15 @@
+
+
+
+
+  User --> Chatbot UI (website)
+                  ↓
+           Backend API (Python)
+                  ↓
+      Manufacturing Cost Logic
+
+
+
+
+**Example Input-Output Flow**
+User: "I want to calculate cost for producing 100 units." Bot: "Enter material cost per unit:" User: "$5" Bot: "Labor cost per unit?" User: "$3" Bot: "Overhead cost per unit?" User: "$2" Bot: "Total cost for 100 units: $1000"

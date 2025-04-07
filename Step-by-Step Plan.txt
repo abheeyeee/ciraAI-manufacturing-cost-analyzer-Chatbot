@@ -1,0 +1,26 @@
+1. Tech Stack Overview
+Layer	Tool
+Frontend	React + Tailwind CSS
+Chatbot UI	Custom logic (or Botpress)
+Backend API	FastAPI (Python)
+Deployment	Render (for both frontend & backend)
+
+
+2. Features
+Conversational chatbot UI
+
+Collects:
+
+Quantity
+
+Material, labor, overhead costs
+
+Calculates total & unit costs
+
+Suggests cost-saving tips (optional)
+
+Deployable on the web (publicly accessible)
+
+
+Lets start by creating the backend API (FastAPI) and frontend chatbot (React + Tailwind). Then we will go through deployment on Render.
+🚀 Let's Build It....
