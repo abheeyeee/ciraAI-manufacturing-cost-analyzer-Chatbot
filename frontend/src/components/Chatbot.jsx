@@ -31,7 +31,7 @@ const Chatbot = () => {
 
   return (
     <div className="max-w-xl w-full mx-auto bg-white shadow-xl rounded-xl p-4 border border-indigo-100 animate-fade-in">
-      <div className="text-2xl font-bold mb-3 text-center text-indigo-600">Manufacturing Cost Analyzer "12307750,12306371,12320062"🤖</div>
+      <div className="text-2xl font-bold mb-3 text-center text-indigo-600">ciraAI"🤖</div>
       
       <div className="h-80 overflow-y-auto mb-4 space-y-2 bg-gray-100 p-2 rounded">
         {messages.map((msg, i) => (
