@@ -8,14 +8,6 @@
 - 🌐 **Deployment**: [Render.com](https://render.com)  
  
 
----
-
-## 🚀 Live Demo
-
-- **Frontend**: [https://chatbot-frontend-f8pa.onrender.com](https://chatbot-frontend-f8pa.onrender.com)  
-- **Backend**: [https://chatbot-backend-7ij7.onrender.com](https://chatbot-backend-7ij7.onrender.com)
-
----
 
 ## 🛠 Setup Instructions
 
