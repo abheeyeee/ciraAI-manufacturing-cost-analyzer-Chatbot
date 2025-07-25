@@ -26,7 +26,7 @@ def chat():
         headers = {
             "Authorization": f"Bearer {API_KEY}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "http://localhost:5000",  # Update when deployed
+            "HTTP-Referer": "https://chatbot-frontend-f8pa.onrender.com",  # Update when deployed
             "X-Title": "Manufacturing Cost Analyzer"
         }
 
