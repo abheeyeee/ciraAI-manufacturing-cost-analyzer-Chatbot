@@ -2,12 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>CiraAI – Smart Manufacturing Chatbot</title>
+    <meta name="description" content="CiraAI helps you analyze and manage manufacturing costs using AI." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script type="module" src="/src/main.jsx" defer></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(to bottom right, #f8fafc, #eef2ff);
+        color: #1f2937;
+      }
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      .hero h1 {
+        font-size: 2.75rem;
+        font-weight: 700;
+        color: #4f46e5;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        max-width: 600px;
+        font-size: 1.125rem;
+        color: #374151;
+        margin-bottom: 2rem;
+      }
+      .start-btn {
+        background-color: #4f46e5;
+        color: white;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .start-btn:hover {
+        background-color: #4338ca;
+      }
+      .footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+    </style>
   </head>
   <body>
+    <div class="hero">
+      <img src="/vite.svg" alt="CiraAI Logo" style="width: 64px; height: 64px; margin-bottom: 1rem;" />
+      <h1>CiraAI</h1>
+      <p>
+        An AI-powered assistant to help you calculate and manage your manufacturing costs. Fast, smart, and efficient.
+      </p>
+      <button class="start-btn" onclick="document.getElementById('root').scrollIntoView({ behavior: 'smooth' })">
+        Launch Chatbot
+      </button>
+    </div>
+
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <div class="footer">
+      &copy; 2025 CiraAI.  
+    </div>
   </body>
 </html>

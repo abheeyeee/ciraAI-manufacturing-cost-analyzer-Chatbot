@@ -1,8 +1,8 @@
-import Chatbot from './components/Chatbot';
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-indigo-100 px-4">
       <Chatbot />
     </div>
   );
