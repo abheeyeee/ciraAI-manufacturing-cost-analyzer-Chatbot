@@ -6,7 +6,7 @@
 - 🧠 **Frontend**: React + Vite + Tailwind CSS  
 - ⚙️ **Backend**: Python + Flask  
 - 🌐 **Deployment**: [Render.com](https://render.com)  
-- 💬 **AI**: OpenAI / OpenRouter API (for chatbot responses)
+ 
 
 ---
 
