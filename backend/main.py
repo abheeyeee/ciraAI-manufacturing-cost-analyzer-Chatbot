@@ -18,19 +18,20 @@ CORS(app, origins=["https://chatbot-frontend-f8pa.onrender.com"])
 def chat():
     try:
         data = request.get_json()
-        message = data.get("message", "")
+        messages = data.get("messages", [])
 
-        if not message:
-            return jsonify({"error": "Message is required"}), 400
+        if not messages or not isinstance(messages, list):
+            return jsonify({"error": "Messages list is required"}), 400
 
-        print(f"Received message: {message}")
+        print("Received chat history:")
+        for m in messages:
+            print(f"{m['role']}: {m['content']}")
 
-        
         completion = client.chat.completions.create(
-            model="google/gemini-2.5-flash-lite",   
-            messages=[{"role": "user", "content": message}],
+            model="google/gemini-2.5-flash-lite",
+            messages=messages,
             extra_headers={
-                "HTTP-Referer": "http://localhost:5173",
+                "HTTP-Referer": "https://chatbot-frontend-f8pa.onrender.com",
                 "X-Title": "CiraAI"
             }
         )
@@ -42,7 +43,3 @@ def chat():
     except Exception as e:
         print("Error:", e)
         return jsonify({"error": "Something went wrong."}), 500
-
- 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
